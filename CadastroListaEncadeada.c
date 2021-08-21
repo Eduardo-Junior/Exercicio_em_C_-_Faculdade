@@ -51,7 +51,7 @@ void Registrar(){
 	fgets(novo->curso, 99, stdin);
 	
 	_flushall();
-	printf("Ano de conclus„o: ");
+	printf("Ano de conclus√£o: ");
 	scanf("%d", &novo->ano);
 	
 	_flushall();
@@ -163,7 +163,7 @@ int main(){
 		printf("2 - Exibir dados cadastrados\n");
 		printf("0 - Sair\n");
 		
-		printf("Digite a opÁ„o desejada: ");
+		printf("Digite a op√ß√£o desejada: ");
 		scanf("%d", &op);
 		
 		switch(op){
@@ -176,7 +176,7 @@ int main(){
 				break;
 				
 			default:
-				printf("OpÁ„o n„o existente. Tente novamente");
+				printf("Op√ß√£o n√£o existente. Tente novamente");
 				break;
 		}
 		
