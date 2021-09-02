@@ -53,7 +53,7 @@ void Registrar(){
 	fgets(novo->curso, 99, stdin);
 	
 	_flushall();
-	printf("Ano de conclus„o: ");
+	printf("Ano de conclus√£o: ");
 	scanf("%d", &novo->ano);
 	
 	_flushall();
@@ -124,11 +124,11 @@ void Listar(TCC* aux){
 	void buscaPorOrientador(char nomeOrientador[], struct TCC* tcc,
 	int *encontrou){
 		
-		//condiÁ„o de parada: n„o existe mais elementos caso TCC seja 
+		//condi√ß√£o de parada: n√£o existe mais elementos caso TCC seja 
 		//nulo
 		if(tcc!=NULL){
 			
-			//avaliar se o orientador est· no tcc
+			//avaliar se o orientador est√° no tcc
 			if(!strcmp(nomeOrientador,tcc->professor.nome)){
 				Listar(tcc);
 			    *encontrou=1;
@@ -197,7 +197,7 @@ int main(){
 		printf("3 - Listar TCC por orientador\n");
 		printf("0 - Sair\n");
 		
-		printf("Digite a opÁ„o desejada: ");
+		printf("Digite a op√ß√£o desejada: ");
 		scanf("%d", &op);
 		
 		switch(op){
@@ -214,7 +214,7 @@ int main(){
 				
 				if(inicio!=NULL){
 					_flushall();
-					//ler a informaÁ„o a ser procurada
+					//ler a informa√ß√£o a ser procurada
 					printf("Informe o nome do orientador");
 					gets(nomeOrientador);
 					
@@ -222,7 +222,7 @@ int main(){
 					&encontrou);
 					
 					if(!encontrou){
-						printf("\nOrientador n„o encontrado!");
+						printf("\nOrientador n√£o encontrado!");
 					}
 					
 				}else{
@@ -241,7 +241,7 @@ int main(){
 				
 				break;				
 			default:
-				printf("OpÁ„o n„o existente. Tente novamente");
+				printf("Op√ß√£o n√£o existente. Tente novamente");
 				break;
 		}
 		
